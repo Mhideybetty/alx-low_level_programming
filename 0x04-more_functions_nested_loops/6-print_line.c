@@ -13,5 +13,5 @@ while (a < n && n > 0)
 _putchar('_');
 a++;
 }
- _putchar('\n');
+_putchar('\n');
 }
