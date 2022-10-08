@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s2 == NULL)
 		b = 0;
-	else 
+	else
 	{
 		for (b = 0; s2[b]; b++)
 			;
