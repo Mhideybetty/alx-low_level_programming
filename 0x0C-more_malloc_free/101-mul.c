@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 	}
 	for (f1 = 0; argv[1][f1]; f1++)
 		;
-	for (f2 =0; argv[2][f2]; f2++)
+	for (f2 = 0; argv[2][f2]; f2++)
 		;
 	fn = f1 + f2 + 1;
 	b = malloc(fn * sizeof(char));
