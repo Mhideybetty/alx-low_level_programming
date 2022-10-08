@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
 			free(b);
 			exit(98);
 		}
-		
+
 	}
 	_print(b, fn - 1);
 	return (0);
