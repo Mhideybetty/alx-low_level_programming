@@ -120,6 +120,8 @@ int main(int argc, char *argv[])
 	}
 	for (f1 = 0; argv[1][f1]; f1++)
 		;
+	for (f2 =0; argv[2][f2]; f2++)
+		;
 	fn = f1 + f2 + 1;
 	b = malloc(fn * sizeof(char));
 	if (b == NULL)
@@ -139,6 +141,8 @@ int main(int argc, char *argv[])
 			free(b);
 			exit(98);
 		}
-		_print(b, fn - 1);
-		return (0);
+		
 	}
+	_print(b, fn - 1);
+	return (0);
+}
