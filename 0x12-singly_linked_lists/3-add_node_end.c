@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node_end = Adss a new node at the end of a list
+ * add_node_end - Adds a new node at the end of a list
  * @head: The original linked list
  * @str: The string to add to the node
  *
@@ -16,7 +16,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (str != NULL)
 	{
-		new_list =malloc(sizeof(list_t));
+		new_list = malloc(sizeof(list_t));
 		if (new_list == NULL)
 			return (NULL);
 
@@ -35,10 +35,11 @@ list_t *add_node_end(list_t **head, const char *str)
 			while (temp->next)
 				temp = temp->next;
 
-			temp->next =new_list;
+			temp->next = new_list;
 			return (temp);
 		}
 	}
+
 	return (NULL);
 }
 
